@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 body{
-    overflow: hidden;
+   position:relative;
 }
 .brands{
     background-color:#F8F8F8;
@@ -37,7 +37,7 @@ body{
     height:70px;
     margin-left:101%;
     position: absolute;
-    box-shadow:  -10px 0px 20px 2px black;
+    box-shadow:  -10px 0px 20px 2px white;
     background-color: white;
   
 }
