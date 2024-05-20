@@ -8,7 +8,7 @@ var z = document.documentElement.clientWidth;
 
         breakpoints: {
             20: {
-                slidesPerView: 1.3,
+                slidesPerView: 1.7,
                 // spaceBetween: 500,
                 breakpointsBase: 'container',
                 // centeredSlides: true
