@@ -4,10 +4,11 @@
     margin:0;
     box-sizing: border-box;
     font-family: 'TT Lakes';
-    overflow: hidden;
+    
 }
 body{
     position: relative;
+    overflow: hidden;
 }
 .brands{
     background-color:#F8F8F8;
