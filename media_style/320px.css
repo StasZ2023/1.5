@@ -1,0 +1,29 @@
+@media screen and (min-width:320px) {
+    
+    .slider--items{
+        width:230px;
+        display: flex;
+      
+     }
+
+
+    .circle{
+        display: block;
+    }
+    .circle--spac{
+        /* padding-top:15px; */
+        padding:15px 0 38px 0;
+        position: relative;
+    }
+    .swiper-pagination-bullet{
+        width:12px;
+        height:12px;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #7E7E82;
+    }
+    .all{
+        display: none;
+    }
+
+}
