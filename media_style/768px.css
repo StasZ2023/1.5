@@ -20,7 +20,7 @@
         position: relative;
         font-weight: 500;
         padding-top:10px;
-        /* transform:rotate(90deg); */
+         cursor: pointer;
     }
     
 
