@@ -81,7 +81,7 @@ body{
     .slider--items{
         width:230px;
         display: flex;
-        margin-left:16px;
+        
      }
     .circle{
         display: block;
@@ -113,9 +113,7 @@ body{
         gap: 32px;
      }
 
-     .link{
-        margin:0;
-     }
+    
     .circle{
         display: none;
     }
