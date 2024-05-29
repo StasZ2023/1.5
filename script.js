@@ -1,61 +1,44 @@
-let swiper = document.querySelector('.slider')
+let swiper = document.querySelector(".slider");
+let swiper_slide = document.querySelector(".swiper-slide");
+if (document.documentElement.clientWidth < 768) {
+  swiper.classList.add("swiper");
+  swiper_slide.style.width = "230px";
+}
 
- if (document.documentElement.clientWidth < 768) { 
-    swiper.classList.add('swiper');
- }
+const mySwiper = new Swiper(".swiper", {
+  breakpoints: {
+    320: {
+      slidesPerView: 1.3,
 
-    const mySwiper = new Swiper('.swiper', {
+      breakpointsBase: "container",
+    },
+  },
 
-        breakpoints: {
-            320: {
-                slidesPerView: 1.3,
-               
-                breakpointsBase: 'container',
-                
-            },
-          },
-          
-        // loop: true,
-      
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-      
-       
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      })
-      
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    let all = document.querySelector('.all');
-    let slider = document.querySelector('.slider--items');
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
+let all = document.querySelector(".all");
+let slider = document.querySelector(".slider--items");
 
-    all.addEventListener('click', function(evt){
-   
-       
-        
-        
-      evt.preventDefault();  
- 
-      if (all.textContent == 'Скрыть') { 
-        all.classList.add('arrow--bottom');
-          all.classList.remove('arrow--top'); 
-          all.textContent = 'Показать все';  
-          slider.style.height = '180px';
-      } else if (all.textContent == 'Показать все') {  
-          all.classList.add('arrow--top');
-          all.classList.remove('arrow--bottom');
-          all.textContent = 'Скрыть';  
-          slider.style.height = 'auto';
-      }  
-      })
-    
-   
-        
+all.addEventListener("click", function (evt) {
+  evt.preventDefault();
 
-   
-      
+  all.classList.toggle('arrow--bottom')
+  all.classList.toggle('arrow--top')
+
+  if (all.textContent == "Скрыть") {
+    all.textContent = "Показать все";
+    slider.style.height = "180px";
+  } else if (all.textContent == "Показать все") {
+    all.textContent = "Скрыть";
+    slider.style.height = "auto";
+  }
+});
